@@ -1,0 +1,85 @@
+/*Bonny Guang, July 2010*/
+/*CSS Sheet for ADAM*/
+body {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    width: 924px;
+	float: center;
+	margin: auto;
+
+}
+#wrap {
+    margin:0 auto;
+    background-size: 100%;
+}
+/* VBI Logo and Title */
+#header {
+    float: center;
+    margin: auto;
+    width:924px;
+    padding: 5px;
+}
+#header table {
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.nav { 	    
+	float: center;
+	text-align: center; 
+	/*border: 1px solid #ABABAB;*/
+}
+
+/* Main Block: Input Functions and State/Node Number; Also Output */
+#main {
+    width:924px;
+    float: center;
+    margin: auto;
+	position: relative;
+}
+	
+
+}
+/* Controls main color and size of boxes. Currently pale gray-ish */
+#main table
+{
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #ABABAB;
+    background-color: #CCCCCC;
+    width: 100%;
+    border-spacing: 0px;
+    padding: 3px;
+}
+
+
+#footer {
+    float:center;
+    width:1024px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: .8em;
+    /*text-align: center;*/
+}
+
+
+
+
+/* Controls color of the title boxes. Currently some kind of pale blue. */
+td.titleBox {
+	background-color: #99C9FF;
+	white-space: nowrap;
+}
+/* Creates those little gray lines dividing each section */
+tr.lines td {
+	background-color: #DCDCDC;
+	height: 1px;
+}
+/* For explanation boxes */
+td.explain {
+    width: 40%;
+    /*font-size: 12px;*/
+}
+
+

@@ -1,0 +1,37 @@
+<%= render :partial => "form" %>
+<%= error_messages_for :job %>
+<font color="red"><strong><%= @error_message %></strong></font>
+<p>
+The links below will show your results once we have processed your data. 
+</p>
+<% if @job.show_discretized %>
+    <a href="/perl/<%= @job.file_prefix  %>.discretized-input.txt" target="_blank"><font
+    color=green><i>Discretized Data<br></i></font></a>
+<% end %>
+<% if @job.wiring_diagram %>
+    <a href="/perl/<%= @job.file_prefix  %>.wiring-diagram.<%=
+    @job.wiring_diagram_format %>" target="_blank"><font color=green><i>Wiring
+    diagram<br></i></font></a>
+<% end %>
+<% if @job.show_functions %>
+    <a href="/perl/<%= @job.file_prefix  %>.functionfile.txt" target="_blank"><font
+    color=green><i>Network Functions<br></i></font></a>
+<% end %>
+<% if @job.state_space%>
+    <a href="/perl/<%= @job.file_prefix  %>.out.<%=
+    @job.state_space_format %>" target="_blank"><font
+    color=green><i>Statespace<br></i></font></a>
+<% end %>
+<!-- <font color=blue>Deterministic? <%= if @job.is_deterministic then "yup"
+else "nope" end %> </font> -->
+
+ <div id="completion_msg"><font color="red">
+ Please wait while we process your data...
+</font></div> 
+	
+<%= javascript_include_tag 'perl_completion' %>
+<script>
+	setTimeout("check_perl_completed('<%= @job.file_prefix  %>');", 2000);
+</script>
+<%= @simulation_output%>
+<!-- <%= @perl_output %> -->

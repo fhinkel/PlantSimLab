@@ -1,0 +1,401 @@
+---discretizing gene 1 ----
+min, max values: .0205377 .657299
+min, max steady: .0848025 .167422
+interval boundaries: {.0205377, .168696, .275242, .402595, .529947, .657299}
+---discretizing gene 2 ----
+min, max values: .0545325 .456457
+min, max steady: .218771 .277052
+interval boundaries: {.0545325, .134917, .215302, .295687, .376072, .456457}
+---discretizing gene 3 ----
+min, max values: .0483459 .765262
+min, max steady: .436432 .564118
+interval boundaries: {.0483459, .191729, .335112, .434998, .621879, .765262}
+---discretizing gene 4 ----
+min, max values: .043533 .654379
+min, max steady: .264174 .428657
+interval boundaries: {.043533, .153854, .262953, .429878, .541518, .654379}
+---discretizing gene 5 ----
+min, max values: .211816 .807348
+min, max steady: .487976 .686419
+interval boundaries: {.211816, .30387, .395923, .486785, .68761, .807348}
+---discretizing gene 6 ----
+min, max values: .0000129 .555162
+min, max steady: .0221749 .0711074
+interval boundaries: {.0000129, .111043, .222073, .333102, .444132, .555162}
+---discretizing gene 7 ----
+min, max values: .0026177 .838088
+min, max steady: .520624 .768998
+interval boundaries: {.0026177, .132119, .261621, .391122, .518953, .838088}
+---discretizing gene 8 ----
+min, max values: .131341 .680188
+min, max steady: .342803 .546354
+interval boundaries: {.131341, .237072, .341706, .547451, .613271, .680188}
+---discretizing gene 9 ----
+min, max values: .0015908 .482798
+min, max steady: .0054608 .0229585
+interval boundaries: {.0015908, .0978322, .194074, .290315, .386556, .482798}
+---discretizing gene 10 ----
+min, max values: .0019667 .658406
+min, max steady: .356275 .567722
+interval boundaries: {.0019667, .120069, .238172, .354962, .569035, .658406}
+---discretizing gene 11 ----
+min, max values: 0 .259571
+min, max steady: .0043615 .0307336
+interval boundaries: {0, .0519142, .103828, .155742, .207657, .259571}
+---discretizing gene 12 ----
+min, max values: .119128 .665121
+min, max steady: .269345 .419677
+interval boundaries: {.119128, .194236, .268253, .420769, .542399, .665121}
+---discretizing gene 13 ----
+min, max values: .0000526 .641006
+min, max steady: .0133364 .0815335
+interval boundaries: {.0000526, .128243, .256434, .384625, .512815, .641006}
+---discretizing gene 14 ----
+min, max values: .0025268 .483135
+min, max steady: .0097068 .0370511
+interval boundaries: {.0025268, .0986484, .19477, .290892, .387013, .483135}
+---discretizing gene 15 ----
+min, max values: .0002645 .757683
+min, max steady: .0013486 .0231607
+interval boundaries: {.0002645, .151748, .303232, .454716, .6062, .757683}
+---discretizing gene 16 ----
+min, max values: .0135415 .697465
+min, max steady: .0389655 .126345
+interval boundaries: {.0135415, .150326, .287111, .423895, .56068, .697465}
+---discretizing gene 17 ----
+min, max values: .0495914 .794606
+min, max steady: .274658 .410094
+interval boundaries: {.0495914, .198594, .411585, .4966, .645603, .794606}
+---discretizing gene 18 ----
+min, max values: .0288893 .784796
+min, max steady: .3964 .567692
+interval boundaries: {.0288893, .151393, .273896, .394888, .569203, .784796}
+---discretizing gene 19 ----
+min, max values: .0014243 .589503
+min, max steady: .0316421 .0990208
+interval boundaries: {.0014243, .11904, .236656, .354271, .471887, .589503}
+---discretizing gene 20 ----
+min, max values: 0 .404111
+min, max steady: .0003071 .0041884
+interval boundaries: {0, .0808221, .161644, .242466, .323289, .404111}
+---discretizing gene 21 ----
+min, max values: .0050003 .733323
+min, max steady: .0170044 .0607408
+interval boundaries: {.0050003, .150665, .296329, .441994, .587658, .733323}
+---discretizing gene 22 ----
+min, max values: .0596955 .561883
+min, max steady: .119295 .198685
+interval boundaries: {.0596955, .19969, .260571, .361008, .461446, .561883}
+---discretizing gene 23 ----
+min, max values: .0102456 .641622
+min, max steady: .0782678 .2154
+interval boundaries: {.0102456, .077005, .216662, .357474, .499548, .641622}
+---discretizing gene 24 ----
+min, max values: .0039697 .709789
+min, max steady: .0765996 .238088
+interval boundaries: {.0039697, .075188, .2395, .395322, .552556, .709789}
+---discretizing gene 25 ----
+min, max values: .0000365 .511181
+min, max steady: .0830939 .156082
+interval boundaries: {.0000365, .0820716, .204494, .306723, .408952, .511181}
+---discretizing gene 26 ----
+min, max values: .0394006 .878647
+min, max steady: .546055 .878647
+interval boundaries: {.0394006, .166064, .292728, .419392, .544377, .878647}
+---discretizing gene 27 ----
+min, max values: .0030813 .774152
+min, max steady: .392833 .59821
+interval boundaries: {.0030813, .132999, .262916, .391291, .599752, .774152}
+---discretizing gene 28 ----
+min, max values: .0096081 .714803
+min, max steady: .290172 .386523
+interval boundaries: {.0096081, .150647, .288762, .432725, .573764, .714803}
+---discretizing gene 29 ----
+min, max values: .0210018 .686051
+min, max steady: .139855 .253698
+interval boundaries: {.0210018, .138525, .287022, .420031, .553041, .686051}
+---discretizing gene 30 ----
+min, max values: .034537 .767032
+min, max steady: .386608 .607894
+interval boundaries: {.034537, .151894, .269251, .385143, .609359, .767032}
+---discretizing gene 31 ----
+min, max values: .0150927 .829678
+min, max steady: .170623 .289525
+interval boundaries: {.0150927, .168994, .340927, .503844, .666761, .829678}
+---discretizing gene 32 ----
+min, max values: .0000858 .604295
+min, max steady: .0080639 .0236781
+interval boundaries: {.0000858, .120928, .241769, .362611, .483453, .604295}
+---discretizing gene 33 ----
+min, max values: .113244 .64415
+min, max steady: .144657 .233707
+interval boundaries: {.113244, .234769, .325606, .431788, .537969, .64415}
+---discretizing gene 34 ----
+min, max values: .0540749 .723747
+min, max steady: .074762 .12753
+interval boundaries: {.0540749, .188009, .321944, .455878, .589813, .723747}
+---discretizing gene 35 ----
+min, max values: .0583744 .880992
+min, max steady: .444793 .643168
+interval boundaries: {.0583744, .251584, .443148, .644813, .76208, .880992}
+---discretizing gene 36 ----
+min, max values: .0097815 .825966
+min, max steady: .511037 .801364
+interval boundaries: {.0097815, .135095, .260409, .385723, .509404, .825966}
+---discretizing gene 37 ----
+min, max values: .0013623 .825339
+min, max steady: .563399 .658803
+interval boundaries: {.0013623, .166158, .330953, .495749, .660544, .825339}
+---discretizing gene 38 ----
+min, max values: .0266303 .712067
+min, max steady: .0764301 .130788
+interval boundaries: {.0266303, .163718, .300805, .437892, .574979, .712067}
+---discretizing gene 39 ----
+min, max values: .0226984 .693237
+min, max steady: .0304124 .0809708
+interval boundaries: {.0226984, .156806, .290914, .425021, .559129, .693237}
+---discretizing gene 40 ----
+min, max values: .444493 .874537
+min, max steady: .488084 .705076
+interval boundaries: {.444493, .487224, .705936, .761563, .81805, .874537}
+---discretizing gene 41 ----
+min, max values: .0172854 .480723
+min, max steady: .0266324 .0740063
+interval boundaries: {.0172854, .109973, .20266, .295348, .388035, .480723}
+---discretizing gene 42 ----
+min, max values: .0804847 .82112
+min, max steady: .481493 .726449
+interval boundaries: {.0804847, .214154, .347824, .480012, .72793, .82112}
+---discretizing gene 43 ----
+min, max values: .0244403 .905393
+min, max steady: .555662 .758505
+interval boundaries: {.0244403, .201514, .378588, .553901, .760267, .905393}
+---discretizing gene 44 ----
+min, max values: .0095964 .703873
+min, max steady: .468766 .596326
+interval boundaries: {.0095964, .148452, .287307, .426162, .597714, .703873}
+---discretizing gene 45 ----
+min, max values: .0260048 .802448
+min, max steady: .482493 .724524
+interval boundaries: {.0260048, .178167, .33033, .48094, .726077, .802448}
+---discretizing gene 46 ----
+min, max values: .0239859 .8109
+min, max steady: .55658 .711242
+interval boundaries: {.0239859, .181369, .338751, .496134, .712816, .8109}
+---discretizing gene 47 ----
+min, max values: .0041367 .768027
+min, max steady: .442967 .625259
+interval boundaries: {.0041367, .150413, .29669, .441439, .626787, .768027}
+---discretizing gene 48 ----
+min, max values: .0176074 .7665
+min, max steady: .415296 .602242
+interval boundaries: {.0176074, .15017, .282733, .413799, .60374, .7665}
+---discretizing gene 49 ----
+min, max values: .0158241 .771042
+min, max steady: .339052 .469582
+interval boundaries: {.0158241, .166868, .317911, .471093, .619998, .771042}
+---discretizing gene 50 ----
+min, max values: .0334664 .624453
+min, max steady: .138739 .240478
+interval boundaries: {.0334664, .137558, .269861, .388059, .506256, .624453}
+---discretizing gene 51 ----
+min, max values: .0551595 .795078
+min, max steady: .492573 .758814
+interval boundaries: {.0551595, .164513, .273866, .383219, .491093, .795078}
+---discretizing gene 52 ----
+min, max values: .0716148 .902232
+min, max steady: .548315 .705445
+interval boundaries: {.0716148, .237738, .403862, .546654, .736108, .902232}
+---discretizing gene 53 ----
+min, max values: .0143768 .647886
+min, max steady: .308988 .562064
+interval boundaries: {.0143768, .11258, .210784, .307721, .563331, .647886}
+---discretizing gene 54 ----
+min, max values: .0628725 .600804
+min, max steady: .132531 .307688
+interval boundaries: {.0628725, .131455, .308764, .405394, .503099, .600804}
+---discretizing gene 55 ----
+min, max values: .161657 .758699
+min, max steady: .358724 .544419
+interval boundaries: {.161657, .260191, .35753, .545613, .651559, .758699}
+---discretizing gene 56 ----
+min, max values: .0001523 .748449
+min, max steady: .234998 .483783
+interval boundaries: {.0001523, .117575, .233502, .485279, .616116, .748449}
+---discretizing gene 57 ----
+min, max values: .0506057 .775626
+min, max steady: .19311 .4235
+interval boundaries: {.0506057, .19166, .42495, .540875, .658251, .775626}
+---discretizing gene 58 ----
+min, max values: .0188656 .613191
+min, max steady: .180269 .269713
+interval boundaries: {.0188656, .137731, .270902, .375461, .494326, .613191}
+---discretizing gene 59 ----
+min, max values: .0237633 .462512
+min, max steady: .0438874 .14547
+interval boundaries: {.0237633, .146347, .22473, .303991, .383251, .462512}
+---discretizing gene 60 ----
+min, max values: .0077809 .564708
+min, max steady: .159439 .273498
+interval boundaries: {.0077809, .158325, .274612, .370568, .467638, .564708}
+---discretizing gene 61 ----
+min, max values: .0001196 .402922
+min, max steady: .0015807 .0484608
+interval boundaries: {.0001196, .0806801, .161241, .241801, .322362, .402922}
+---discretizing gene 62 ----
+min, max values: .0019178 .644875
+min, max steady: .217362 .346714
+interval boundaries: {.0019178, .10964, .216076, .348, .495794, .644875}
+---discretizing gene 63 ----
+min, max values: .0277479 .813802
+min, max steady: .537605 .813802
+interval boundaries: {.0277479, .155212, .282676, .410141, .536033, .813802}
+---discretizing gene 64 ----
+min, max values: .0214729 .662628
+min, max steady: .339361 .59868
+interval boundaries: {.0214729, .127435, .233398, .338078, .599962, .662628}
+---discretizing gene 65 ----
+min, max values: .13243 .744358
+min, max steady: .345395 .486342
+interval boundaries: {.13243, .238913, .344171, .487566, .61535, .744358}
+---discretizing gene 66 ----
+min, max values: .0173311 .734333
+min, max steady: .2453 .537317
+interval boundaries: {.0173311, .131316, .243866, .538751, .635825, .734333}
+---discretizing gene 67 ----
+min, max values: .163111 .721521
+min, max steady: .301378 .417397
+interval boundaries: {.163111, .300262, .418513, .518771, .620146, .721521}
+---discretizing gene 68 ----
+min, max values: .125634 .698846
+min, max steady: .336191 .496935
+interval boundaries: {.125634, .230913, .335045, .498082, .597891, .698846}
+---discretizing gene 69 ----
+min, max values: .0369094 .588579
+min, max steady: .362049 .553393
+interval boundaries: {.0369094, .118194, .199479, .280764, .360946, .588579}
+---discretizing gene 70 ----
+min, max values: 0 .626104
+min, max steady: .0078694 .0380965
+interval boundaries: {0, .125221, .250442, .375663, .500884, .626104}
+---discretizing gene 71 ----
+min, max values: 0 .777714
+min, max steady: .118132 .195038
+interval boundaries: {0, .116576, .311086, .466629, .622171, .777714}
+---discretizing gene 72 ----
+min, max values: .0000235 .787549
+min, max steady: .0050013 .0452567
+interval boundaries: {.0000235, .157529, .315034, .472539, .630044, .787549}
+---discretizing gene 73 ----
+min, max values: .0022708 .75629
+min, max steady: .0260431 .0675393
+interval boundaries: {.0022708, .153075, .303879, .454682, .605486, .75629}
+---discretizing gene 74 ----
+min, max values: .0030838 .738479
+min, max steady: .0404651 .0856617
+interval boundaries: {.0030838, .150163, .297242, .444321, .5914, .738479}
+---discretizing gene 75 ----
+min, max values: .0150594 .685824
+min, max steady: .263429 .449759
+interval boundaries: {.0150594, .139244, .262088, .451101, .567792, .685824}
+---discretizing gene 76 ----
+min, max values: .0000477 .806071
+min, max steady: .514218 .71706
+interval boundaries: {.0000477, .171438, .342828, .512606, .718672, .806071}
+---discretizing gene 77 ----
+min, max values: .0032539 .653589
+min, max steady: .0079101 .0285135
+interval boundaries: {.0032539, .133321, .263388, .393455, .523522, .653589}
+---discretizing gene 78 ----
+min, max values: .0135722 .638363
+min, max steady: .0595961 .135915
+interval boundaries: {.0135722, .13853, .263488, .388446, .513405, .638363}
+---discretizing gene 79 ----
+min, max values: .0060621 .716295
+min, max steady: .0968543 .239397
+interval boundaries: {.0060621, .0954338, .240817, .398363, .557329, .716295}
+---discretizing gene 80 ----
+min, max values: 0 .626605
+min, max steady: .0120184 .0342903
+interval boundaries: {0, .125321, .250642, .375963, .501284, .626605}
+---discretizing gene 81 ----
+min, max values: .0302171 .675493
+min, max steady: .262102 .45259
+interval boundaries: {.0302171, .146159, .260811, .453881, .564042, .675493}
+---discretizing gene 82 ----
+min, max values: .0035116 .58193
+min, max steady: .073048 .160176
+interval boundaries: {.0035116, .161333, .234879, .350563, .466247, .58193}
+---discretizing gene 83 ----
+min, max values: .0301689 .834202
+min, max steady: .491224 .75319
+interval boundaries: {.0301689, .183854, .337539, .489616, .754798, .834202}
+---discretizing gene 84 ----
+min, max values: .0552957 .625405
+min, max steady: .131529 .224593
+interval boundaries: {.0552957, .130389, .283339, .397361, .511383, .625405}
+---discretizing gene 85 ----
+min, max values: .0269567 .739164
+min, max steady: .479996 .635948
+interval boundaries: {.0269567, .17797, .328983, .478572, .637373, .739164}
+---discretizing gene 86 ----
+min, max values: 0 .294605
+min, max steady: .157677 .262826
+interval boundaries: {0, .0525592, .105118, .157088, .263415, .294605}
+---discretizing gene 87 ----
+min, max values: .0090415 .651164
+min, max steady: .0902644 .169576
+interval boundaries: {.0090415, .17086, .26589, .394315, .522739, .651164}
+---discretizing gene 88 ----
+min, max values: .0082925 .629175
+min, max steady: .0347288 .106517
+interval boundaries: {.0082925, .132469, .256645, .380822, .504998, .629175}
+---discretizing gene 89 ----
+min, max values: .0134044 .74394
+min, max steady: .0219346 .0516274
+interval boundaries: {.0134044, .159512, .305619, .451726, .597833, .74394}
+---discretizing gene 90 ----
+min, max values: .127223 .847698
+min, max steady: .559328 .742412
+interval boundaries: {.127223, .271258, .415293, .557887, .743853, .847698}
+---discretizing gene 91 ----
+min, max values: .184249 .807095
+min, max steady: .533393 .762055
+interval boundaries: {.184249, .271535, .358821, .446107, .532147, .807095}
+---discretizing gene 92 ----
+min, max values: .0434397 .569721
+min, max steady: .3607 .560556
+interval boundaries: {.0434397, .122755, .20207, .281385, .359648, .569721}
+---discretizing gene 93 ----
+min, max values: .0433723 .836563
+min, max steady: .597629 .678807
+interval boundaries: {.0433723, .20201, .360649, .519287, .680393, .836563}
+---discretizing gene 94 ----
+min, max values: .0170361 .626472
+min, max steady: .372031 .542111
+interval boundaries: {.0170361, .135368, .2537, .370812, .54333, .626472}
+---discretizing gene 95 ----
+min, max values: .0319259 .660148
+min, max steady: .388703 .53917
+interval boundaries: {.0319259, .150852, .269777, .387447, .540427, .660148}
+---discretizing gene 96 ----
+min, max values: .334234 .831899
+min, max steady: .49629 .694926
+interval boundaries: {.334234, .415262, .495294, .695921, .763413, .831899}
+---discretizing gene 97 ----
+min, max values: .13632 .597754
+min, max steady: .200408 .277198
+interval boundaries: {.13632, .199485, .320894, .413181, .505467, .597754}
+---discretizing gene 98 ----
+min, max values: .122155 .824413
+min, max steady: .465779 .703719
+interval boundaries: {.122155, .236696, .351238, .464375, .705124, .824413}
+---discretizing gene 99 ----
+min, max values: .0528804 .735341
+min, max steady: .416439 .735341
+interval boundaries: {.0528804, .14377, .234659, .325549, .415074, .735341}
+---discretizing gene 100 ----
+min, max values: .231465 .81571
+min, max steady: .578031 .712491
+interval boundaries: {.231465, .346987, .462509, .576863, .713659, .81571}
+

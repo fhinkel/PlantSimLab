@@ -1,0 +1,10 @@
+STATE SPACE: 59049
+
+1 CYCLES FOUND
+
+
+LIMIT CYCLE:
+Component Size: 59049 = 100.000%
+Length: 1
+[ 1 1 1 1 1 1 1 1 1 1 ]
+DONE

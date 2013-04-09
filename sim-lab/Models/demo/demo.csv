@@ -1,0 +1,64 @@
+demo
+
+3	Nodes
+
+2	States
+
+4000	Width
+4000	Height
+
+AbrevName:	A
+FullName:	A
+Color:	3
+Shape:	1
+Radius:	24.475
+States:	2	low	high
+Loc:	1807	1792
+Table:	Tables/A.csv
+
+AbrevName:	B
+FullName:	B
+Color:	12
+Shape:	2
+Radius:	24.475
+States:	2	low	high
+Loc:	2005	1751
+Table:	Tables/B.csv
+
+AbrevName:	C
+FullName:	C
+Color:	9
+Shape:	0
+Radius:	24.475
+States:	2	absent	present
+Loc:	1903	1901
+Table:	Tables/C.csv
+
+
+2	Edges
+
+Start:	A
+End:	B
+Name:	unnamed
+Weight:	1.0
+ForcedType:	-1
+Color:	3
+3	Anchors:	1807	1792	2005	1792	2005	1751
+
+Start:	B
+End:	C
+Name:	unnamed
+Weight:	-1.0
+ForcedType:	-1
+Color:	12
+3	Anchors:	2005	1751	2005	1901	1903	1901
+
+
+1	Drawings
+
+
+Color:	0
+4	Points:	1859	1750	2073	1750	2073	1958	1859	1958	
+
+<NOTES>
+</NOTES>

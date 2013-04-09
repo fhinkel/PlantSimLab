@@ -1,0 +1,6 @@
+--using minsets
+
+--restart
+needs "MinSets.m2"
+pn={5,15};
+for j from 1 to 5 do (wtfile=concatenate("consistent-output-10-",toString j,"-time-series"); kfile=concatenate("output-10-",toString j,"-knockouts");  woutfile=concatenate("wWD-10-",toString j);minsetsWD(wtfile,kfile,woutfile,pn,Var=> toList (1..10)));

@@ -1,0 +1,9 @@
+This is a testsuite to check any changes in the code against pre-existing .dot
+files. 
+
+The pregenerated .dot files are named istoch.dot and idep.dot. 
+The testsuite script runs the runner script to generate the files, using
+filei.txt as input file and runs a diff on pregenerated and new files
+
+Attention: testsuite does not check the webinterface or new_dvd2.pl at all!
+

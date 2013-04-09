@@ -1,0 +1,148 @@
+<% form_for :job, @job, :url => { :action => "generate" }, :html => { :multipart => true } do |form| %>
+<div style="font-family:Verdana,Arial">
+    <div id="tipDiv" style="position:absolute; visibility:hidden; z-index:100"></div>
+    <table background="/perl/gradient.gif" width="100%"  border="0" cellpadding="0" cellspacing="10">
+        <tr><td align="center" colspan="2"><b><font size="5">Polynome: Discrete System Identification</font></b>
+            <p>If this is your first time, please read the <a href="/perl/tutorial-new.html" target="_blank">tutorial</a>.
+            It is important that you follow the format specified in the tutorial.<br>
+            Make your selections and provide inputs (if any) in the form below and click Generate to run the software.<br>
+        </td></tr>
+        <tr><td>
+            <table align="center" border="0" bgcolor="#ABABAB"  cellpadding="1" cellspacing="0">
+                <tr><td>
+                    <table border="0" bgcolor="#FFFFCC" width="100%" cellspacing="0" cellpadding="1">
+                        <tr valign="top"><td bgcolor="#FF8000" nowrap><strong><font color="#FFFFFF">Input Specification</font></strong></td></tr>
+                        <tr><td BGCOLOR="#DCDCDC" HEIGHT="1"></td></tr>
+                        <tr valign="top"><td nowrap><font size="2"><strong>Type of Data</strong></font></td></tr>
+                        <tr><td BGCOLOR="#DCDCDC" HEIGHT="1"></td></tr>
+                        <tr valign="top"><td nowrap><font size="2">Number of nodes: </font>
+							<%= form.text_field :nodes, :size => 2, :maxlength => 2 %>
+							<a href="tutorial-new.html#N" onmouseover="doTooltip(event,0)" onmouseout="hideTip()"><font size="1">what is this?</font></a>
+                        </td></tr>
+                        <tr><td BGCOLOR="#DCDCDC" HEIGHT="1"></td></tr>
+                        <tr valign="top"><td nowrap><font size="2"><strong>Type of Model</strong></font>
+                            <a href="tutorial-new.html#U" onmouseover="doTooltip(event,4)" onmouseout="hideTip()">
+                            <font size="1">what is this?</font></a>
+                        </td></tr>
+                        <tr><td BGCOLOR="#DCDCDC" HEIGHT="1"></td></tr>
+                        <tr valign="top"><td nowrap><font size="2">Select the type of polynomial dynamical system to be generated:<br>
+                            <%= form.radio_button :is_deterministic, false %>
+                            <%= form.label :is_deterministic, "Stochastic" %>
+                            <br>
+                            <%= form.radio_button :is_deterministic, true%>
+                            <%= form.label :is_deterministic, "Deterministic" %>
+                        </td></tr>
+                        <tr><td BGCOLOR="#DCDCDC" HEIGHT="1"></td></tr>
+                        <tr valign="top"><td nowrap><font size="2"><strong>Type of Simulation</strong></font>
+                            <a href="tutorial-new.html#U" onmouseover="doTooltip(event,4)" onmouseout="hideTip()">
+                            <font size="1">what is this?</font></a>
+                        </td></tr>
+                        <tr><td BGCOLOR="#DCDCDC" HEIGHT="1"></td></tr>
+                        <tr valign="top"><td nowrap><font size="2">
+							<%= form.check_box :sequential %><%= form.label :sequential, "Simulate the state space using an update schedule?" %>
+            			    <br><ul><li>Enter update schedule separated by spaces
+							<%= form.text_field :update_schedule, :size => 20 %></li>
+			                <li>If none is entered, then the nodes will be
+                            simulated in parallel.<br> 
+                            </li></ul></font>
+                        </td></tr>
+                        <tr><td BGCOLOR="#DCDCDC" HEIGHT="1"></td></tr>
+                        <tr valign="top"><td bgcolor="#FF8000" nowrap>
+                            <b><font color="#FFFFFF">Output Options<span style="background-color:#808080"></span></font></b>&nbsp;&nbsp;&nbsp;
+                        </td></tr>
+                        <tr><td BGCOLOR="#DCDCDC" HEIGHT="1"></td></tr>
+                        <tr valign="top"><td nowrap>
+                            <font size="2">Select output to view and file format.&nbsp;</font>
+                            <a href="tutorial-new.html#G" onmouseover="doTooltip(event,6)" onmouseout="hideTip()">
+                            <font size="1">what is this?</font></a><br>
+							<table width="100%" style="font-size: 13">
+								<tr><td colspan="4">
+									<%= form.check_box :show_discretized %><%= form.label :show_discretized, "Show discretized data" %>
+								</td></tr>
+								<tr>
+									<td>
+										<%= form.check_box :wiring_diagram %><%= form.label :wiring_diagram, "Wiring Diagram" %>
+									</td><td>
+										<%= form.select :wiring_diagram_format, [ 
+												["*.gif", "gif"],
+												["*.jpg", "jpg"],
+												["*.png", "png"],
+												["*.ps", "ps"],
+										] %>
+									</td><td>
+										<%= form.check_box :show_probabilities_wiring_diagram %><%= form.label :show_probabilities_wiring_diagram, "Print probabilities in wiring diagram" %>
+									</td>
+								</tr>
+								<tr><td colspan="4">
+									<%= form.check_box :show_functions %><%= form.label :show_functions, "Show functions for Polynomial dynamical system" %>
+								</td></tr>
+								<tr>
+									<td>
+										<%= form.check_box :state_space %><%= form.label :state_space, "State space graph" %>
+									</td><td>
+                            			<%= form.select :state_space_format, [ 
+											["*.gif", "gif"],
+											["*.jpg", "jpg"],
+											["*.png", "png"],
+											["*.ps", "ps"],
+											] %>
+									</td><td>
+										<%= form.check_box :show_probabilities_state_space %><%= form.label :show_probabilities_state_space, "Print probabilities in state space" %>
+									</td>
+								</tr>
+							</table>
+                        </td></tr>
+                        <tr><td BGCOLOR="#DCDCDC" HEIGHT="1"></td></tr>
+                    </table>
+                </td></tr>
+            </table>
+        </td>
+        <td>
+            <table cellSpacing="0" cellPadding="1" align="left" bgColor="#ababab" border="0">
+                <tr><td>
+                    <table cellSpacing="0" cellPadding="1" width="100%" bgColor="#ffffcc" border="0">
+                        <tr vAlign=top><td nowrap
+                        bgColor="#ff8000"><strong><font color="#ffffff">Input Functions (Optional)</font></strong></td></tr>
+                        <tr><td BGCOLOR="#DCDCDC" HEIGHT="1"></td></tr>
+                        <tr valign="top"><td nowrap><font size="2">Upload function file: </font>
+                            <%= form.file_field :input_function_file %>&nbsp;
+                            <a href="tutorial-new.html#F" onmouseover="doTooltip(event,7)" onmouseout="hideTip()">
+                            <font size="1">what is this?</font></a>
+                        </td></tr>
+                        <tr><td BGCOLOR="#DCDCDC" HEIGHT="1"></td></tr>
+                        <tr><td><div align="center"><b>OR</b> <font size="2" color="#006C00">(Edit functions below)</font></div></td></tr>
+                        <tr><td BGCOLOR="#DCDCDC" HEIGHT="1"></td></tr>
+                        <tr valign="top"><td nowrap><div align="center">
+							<%= form.text_area :input_function, :cols => 50, :rows => 4 %>
+						</td></tr>
+       					<tr><td BGCOLOR="#DCDCDC" HEIGHT="1"></td></tr>
+                        <tr vAlign=top><td nowrap bgColor="#ff8000"><strong><font color="#ffffff">Input Data</font></strong></td></tr>
+                        <tr><td BGCOLOR="#DCDCDC" HEIGHT="1"></td></tr>
+                        <tr valign="top"><td nowrap><font size="2">Upload data file: </font>
+                            <%= form.file_field :input_file %>&nbsp;
+                            <a href="tutorial-new.html#F" onmouseover="doTooltip(event,2)" onmouseout="hideTip()">
+                            <font size="1">what is this?</font></a>
+                        </td></tr>
+                        <tr><td BGCOLOR="#DCDCDC" HEIGHT="1"></td></tr>
+                        <tr><td><div align="center"><b>OR</b> <font size="2" color="#006C00">(Edit data below)</font></div></td></tr>
+                        <tr><td BGCOLOR="#DCDCDC" HEIGHT="1"></td></tr>
+                        <tr valign="top"><td nowrap><div align="center">
+							<%= form.text_area :input_data, :cols => 50, :rows => 8 %>
+						</td></tr>
+       					<tr><td BGCOLOR="#DCDCDC" HEIGHT="1"></td></tr>
+        			</table>
+        		</td></tr>
+        	</table>
+        </td></tr>
+    	<tr><td></td></tr>
+    	<tr><td align="center" colspan="2">
+    		<%= submit_tag 'Generate' %>
+ 			<br><font color="#006C00"><br>
+        		<i>Output will be displayed below.
+        			<b>Note</b>: Computation time depends on data size and internet connection.
+            	</i>
+			</font>
+    	</td></tr>
+	</table>
+</div>
+<% end %>

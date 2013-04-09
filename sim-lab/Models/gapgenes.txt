@@ -1,0 +1,16 @@
+Bcd is the activator of Hb. 
+Hb is auto-activated by Bcd. 
+Bcd activates gt.
+Bcd activates Kr.
+Bcd activates kni.
+Cad functions as an activator of gt.
+Cad acts as an activator of Kni.
+Hb functions as a repressor of gt.
+Kr is a repressor of gt.
+Kr acts as a repressor of Hb.
+Hb activate Kr while high levels repress it.
+Gt acts as a repressor of Kr.
+Kni functions as a repressor of Kr.
+Hb represses Kni.
+Gt thus functions as a repressor of kni.
+

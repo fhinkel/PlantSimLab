@@ -1,0 +1,393 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  nodes: 3
+  wiring_diagram: false
+  wiring_diagram_format: gif
+  state_space: false
+  state_space_format: gif
+  show_discretized: false
+  show_functions: false 
+  input_data: "# First time course from testing\n 1.2  2.3  3.4\n 1.1  1.2  1.3\n 2.2  2.3  2.4\n 0.1  0.2  0.3\n"
+  show_probabilities_wiring_diagram: false
+  show_probabilities_state_space: false
+  is_deterministic: false 
+  sequential: false 
+  update_schedule: ""
+
+bad_inconsistent_data:
+  nodes: 2
+  wiring_diagram: false
+  wiring_diagram_format: gif
+  state_space: false
+  state_space_format: gif
+  show_discretized: false
+  show_functions: false 
+  input_data: "# Inconsistent time courses that results in an empty file\n
+  1 1\n
+  0 0\n
+  0 0\n
+  1 1\n
+  1 1\n
+  0 0\n
+  1 1 \n
+  0 0\n"
+  show_probabilities_wiring_diagram: false
+  show_probabilities_state_space: false
+  is_deterministic: false 
+  sequential: false 
+  update_schedule: ""
+
+inconsistent_data_two_timecourses:
+  nodes: 3
+  wiring_diagram: false
+  wiring_diagram_format: gif
+  state_space: false
+  state_space_format: gif
+  show_discretized: false
+  show_functions: false 
+  input_data: "# Inconsistent time courses\n
+# TS1\n
+1 1 0\n
+1 0 1\n
+0 1 1\n
+1 1 1\n
+0 1 0\n
+0 1 1\n
+# TS2\n
+1 1 0\n
+1 1 1\n
+0 1 1\n
+0 0 0 \n
+1 1 1\n
+0 1 1\n"
+  show_probabilities_wiring_diagram: false
+  show_probabilities_state_space: false
+  is_deterministic: false 
+  sequential: false 
+  update_schedule: ""
+
+inconsistent_data:
+  nodes: 3
+  wiring_diagram: false
+  wiring_diagram_format: gif
+  state_space: false
+  state_space_format: gif
+  show_discretized: false
+  show_functions: false 
+  input_data: "# Inconsistent time course\n
+1.2  2.3  3.4\n
+2.2  2.3  2.4\n
+0.1  0.2  0.3\n
+1.2  2.3  3.4\n
+1.1  1.2  1.3\n
+2.2  2.3  2.4\n
+0.1  0.2  0.3\n"
+  show_probabilities_wiring_diagram: false
+  show_probabilities_state_space: false
+  is_deterministic: false 
+  sequential: false 
+  update_schedule: ""
+
+deterministic_wiring_diagram_only:
+  nodes: 3
+  wiring_diagram: true 
+  wiring_diagram_format: gif
+  state_space: false
+  state_space_format: gif
+  show_discretized: false
+  show_functions: false 
+  input_data: "# First time course from testing\n 1.2  2.3  3.4\n 1.1  1.2  1.3\n 2.2  2.3  2.4\n 0.1  0.2  0.3\n"
+  show_probabilities_wiring_diagram: false
+  show_probabilities_state_space: false
+  is_deterministic: true
+  sequential: false 
+  update_schedule: ""
+
+forty_node_network:
+  nodes: 40
+  wiring_diagram: true 
+  wiring_diagram_format: png
+  state_space: false
+  state_space_format: gif
+  show_discretized: false
+  show_functions: false 
+  input_data: "# 10 node network\n
+  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1\n
+  0 0 1 1 0 0 4 2 5 1 0 0 1 1 0 0 4 2 5 1 0 0 1 1 0 0 4 2 5 1 0 0 1 1 0 0 4 2 5 1 \n
+  3 5 2 1 5 4 3 3 5 6 3 5 2 1 5 4 3 3 5 6 3 5 2 1 5 4 3 3 5 6 3 5 2 1 5 4 3 3 5 6\n
+  7 2 3 3 5 4 7 1 2 0 7 2 3 3 5 4 7 1 2 0 7 2 3 3 5 4 7 1 2 0 7 2 3 3 5 4 7 1 2 0\n"
+  show_probabilities_wiring_diagram: false
+  show_probabilities_state_space: false
+  is_deterministic: false 
+  sequential: false 
+  update_schedule: ""
+
+ten_node_network:
+  nodes: 10
+  wiring_diagram: true 
+  wiring_diagram_format: png
+  state_space: false
+  state_space_format: gif
+  show_discretized: false
+  show_functions: false 
+  input_data: "# 10 node network\n
+  1 1 1 1 1 1 1 1 1 1\n
+  0 0 1 1 0 0 4 2 5 1 \n
+  3 5 2 1 5 4 3 3 5 6\n
+  7 2 3 3 5 4 7 1 2 0\n"
+  show_probabilities_wiring_diagram: false
+  show_probabilities_state_space: false
+  is_deterministic: false 
+  sequential: false 
+  update_schedule: ""
+
+stochastic_with_sequential:
+  nodes: 3
+  wiring_diagram: false
+  wiring_diagram_format: gif
+  state_space: false
+  state_space_format: gif
+  show_discretized: false
+  show_functions: false 
+  input_data: "# First time course from testing\n 1.2  2.3  3.4\n 1.1  1.2  1.3\n 2.2  2.3  2.4\n 0.1  0.2  0.3\n"
+  show_probabilities_wiring_diagram: false
+  show_probabilities_state_space: false
+  is_deterministic: false 
+  sequential: true
+  update_schedule: ""
+
+simple:
+  nodes: 3
+  wiring_diagram: false
+  wiring_diagram_format: gif
+  state_space: false
+  state_space_format: gif
+  show_discretized: false
+  show_functions: false 
+  input_data: "1 2 3\n 2 3 4\n 3 4 5\n"
+  show_probabilities_wiring_diagram: false
+  show_probabilities_state_space: false
+  is_deterministic: false 
+  sequential: false 
+  update_schedule: ""
+
+discretized_only:
+  nodes: 3
+  wiring_diagram: false
+  wiring_diagram_format: gif
+  state_space: false
+  state_space_format: gif
+  show_discretized: true
+  show_functions: false 
+  input_data: "1 2 3
+  2 3 4
+  3 4 5"
+  show_probabilities_wiring_diagram: false
+  show_probabilities_state_space: false
+  is_deterministic: false 
+  sequential: false 
+  update_schedule: ""
+
+six_node_network:
+  nodes: 6 
+  wiring_diagram: false
+  wiring_diagram_format: gif
+  state_space: false
+  state_space_format: gif
+  show_discretized: false
+  show_functions: false 
+  input_data: "0 0 0 0 0 0\n
+  0 0 0 1 1 0\n
+  0 0 0 1 0 0\n
+  1 0 0 1 0 0\n
+  1 1 1 1 0 0\n
+  1 1 1 1 0 1\n"
+  show_probabilities_wiring_diagram: false
+  show_probabilities_state_space: false
+  is_deterministic: false 
+  sequential: false 
+  update_schedule: ""
+
+# 9 none network, the last time I tried dot took very long and the website
+# returned with "data created successfully before the gif was made
+nine_node_network:
+  nodes: 9 
+  wiring_diagram: false
+  wiring_diagram_format: gif
+  state_space: false
+  state_space_format: gif
+  show_discretized: false
+  show_functions: false 
+  input_data: "0 0 0 0 0 0 0 0 0\n
+  0 0 0 1 1 0 0 0 1\n
+  0 0 0 1 1 0 1 0 1\n
+  0 0 0 1 0 0 1 0 1\n
+  1 0 0 1 0 0 1 0 1\n
+  1 1 1 1 0 0 1 0 1\n
+  1 1 1 1 0 0 1 1 1\n
+  1 1 1 1 0 1 0 1 0\n
+  1 1 1 1 0 1 0 1 0\n"
+  show_probabilities_wiring_diagram: false
+  show_probabilities_state_space: false
+  is_deterministic: false 
+  sequential: false 
+  update_schedule: ""
+
+#//Regulatory BN (each edge is activation or inhibition)
+#f1 = x1 + x1 x2
+#f2 = x3 + x3 x4
+#f3 = x1 x5 + x4 x5 + x1 x4 x5
+#f4 = 1 + x5 + x5 x6
+#f5 = x1 x7
+#f6 = 1 + x2
+#f7 = 1
+regulatory_bn:
+  nodes: 7 
+  wiring_diagram: false
+  wiring_diagram_format: gif
+  state_space: false
+  state_space_format: gif
+  show_discretized: false
+  show_functions: false 
+  input_data: "0 0 0 0 0 0 0\n
+  0 0 0 1 0 1 1\n
+  0 0 0 1 0 1 1\n
+  #steady state\n
+  1 1 1 1 1 1 1\n
+  0 0 1 1 1 0 1\n
+  0 0 1 0 0 1 1\n
+  0 1 0 1 0 1 1\n
+  0 0 0 1 0 0 1\n
+  0 0 0 1 0 1 1\n
+  0 0 0 1 0 1 1\n
+  #steady state\n
+  1 0 0 0 0 0 0\n
+  1 0 0 1 0 1 1\n
+  1 0 0 1 1 1 1\n
+  1 0 1 1 1 1 1\n
+  1 0 1 1 1 1 1\n
+  #asdf adf asf"
+  show_probabilities_wiring_diagram: false
+  show_probabilities_state_space: false
+  is_deterministic: false 
+  sequential: false 
+  update_schedule: ""
+
+#//Affine BN
+#f1 = 1 + x1 + x2
+#f2 = 1 + x3 + x4
+#f3 = x1 + x4 + x5
+#f4 = 1 + x5 + x6
+#f5 = x1 + x7
+#f6 = 1 + x2
+#f7 = 1
+affine_bn:
+  nodes: 7 
+  wiring_diagram: false
+  wiring_diagram_format: gif
+  state_space: false
+  state_space_format: gif
+  show_discretized: false
+  show_functions: false 
+  input_data: "0 0 0 0 0 0 0\n
+  1 1 0 1 0 1 1\n
+  1 0 0 0 0 0 1\n
+  0 1 1 1 0 1 1\n
+  0 1 1 0 1 0 1\n
+  0 0 1 0 1 0 1\n
+  1 0 1 0 1 1 1\n
+  0 0 0 1 0 1 1\n
+  1 0 1 0 1 1 1\n
+  #limit cycle of length 2\n
+  1 1 1 1 1 1 1\n
+  1 1 1 1 0 0 1\n
+  1 1 0 1 0 0 1\n
+  1 0 0 1 0 0 1\n
+  0 0 0 1 0 1 1\n
+  1 0 1 0 1 1 1\n
+  0 0 0 1 0 1 1\n
+  #limit cycle of length 2\n
+  1 0 0 0 0 0 0\n
+  0 1 1 1 1 1 1\n
+  0 1 0 1 1 0 1\n
+  0 0 0 0 1 0 1\n
+  1 1 1 0 1 1 1\n
+  1 0 0 1 0 0 1\n
+  0 0 0 1 0 1 1\n
+  1 0 1 0 1 1 1\n
+  0 0 0 1 0 1 1\n
+  #limit cycle of length 2\n"
+  show_probabilities_wiring_diagram: false
+  show_probabilities_state_space: false
+  is_deterministic: false 
+  sequential: false 
+  update_schedule: ""
+
+#//Regulatory BN
+#f1 = x1*x2
+#f2 = 1+x3
+#f3 = x1*(1+x2)
+small_regulatory_bn:
+  nodes: 3 
+  wiring_diagram: false
+  wiring_diagram_format: gif
+  state_space: false
+  state_space_format: gif
+  show_discretized: false
+  show_functions: false 
+  input_data: "1 0 1\n
+  0 0 1\n
+  0 0 0\n
+  0 1 0\n
+  0 1 0\n
+  #steady state\n
+  1 1 1\n
+  1 0 0\n
+  0 1 1\n
+  0 0 0\n
+  0 1 0\n
+  0 1 0\n
+  #steady state\n
+  1 1 0\n
+  1 1 0\n
+  #steady state\n"
+  show_probabilities_wiring_diagram: false
+  show_probabilities_state_space: false
+  is_deterministic: false 
+  sequential: false 
+  update_schedule: ""
+
+#//Affine BN
+#f1 = x1*x2
+#f2 = 1+x3
+#f3 = x1*(1+x2)
+small_affine_bn:
+  nodes: 3 
+  wiring_diagram: false
+  wiring_diagram_format: gif
+  state_space: false
+  state_space_format: gif
+  show_discretized: false
+  show_functions: false 
+  input_data: "1 0 1\n
+  1 0 0\n
+  1 1 0\n
+  0 1 1\n
+  1 0 0\n
+  #limit cycle of length 3\n
+  0 0 0\n
+  0 1 1\n
+  1 0 0\n
+  1 1 0\n
+  0 1 1\n
+  #limit cycle of length 3\n
+  1 1 1\n
+  0 0 1\n
+  0 0 1\n
+  #steady state\n"
+  show_probabilities_wiring_diagram: false
+  show_probabilities_state_space: false
+  is_deterministic: false 
+  sequential: false 
+  update_schedule: ""

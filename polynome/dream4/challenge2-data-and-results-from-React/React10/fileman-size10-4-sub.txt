@@ -1,0 +1,26 @@
+P=2; N=15;
+WT ={
+"4_TS1.txt",
+"4_TS2.txt",
+"4_TS3.txt",
+"4_TS4.txt",
+"4_TS5.txt",
+"4_TS6.txt"
+};
+KO ={
+(1,"4_KO1.txt"),
+(2,"4_KO2.txt"),
+(3,"4_KO3.txt"),
+(4,"4_KO4.txt"),
+(5,"4_KO5.txt"),
+(6,"4_KO6.txt"),
+(7,"4_KO7.txt"),
+(8,"4_KO8.txt"),
+(9,"4_KO9.txt"),
+(10,"4_KO10.txt")
+};
+REV = {};
+CMPLX = {};
+BIO = {"Bio-network4-subset.txt"};
+MODEL = {};
+PARAMS = {"params-size10-1.txt"};

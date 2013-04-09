@@ -1,0 +1,301 @@
+lac_operon_full							
+							
+13	Nodes						
+							
+2	States						
+							
+4000	Width						
+4000	Height						
+							
+Name:	Ge						
+Color:	0						
+Shape:	0						
+Radius:	24.475						
+States:	2	low	high				
+Loc:	1531	2179					
+Table:	Tables/Ge.csv						
+							
+Name:	C						
+Color:	2						
+Shape:	0						
+Radius:	24.475						
+States:	2	low	high				
+Loc:	1723	1845					
+Table:	Tables/C.csv						
+							
+Name:	R						
+Color:	6						
+Shape:	0						
+Radius:	24.475						
+States:	2	low	high				
+Loc:	1731	2111					
+Table:	Tables/R.csv						
+							
+Name:	M						
+Color:	4						
+Shape:	0						
+Radius:	24.475						
+States:	2	low	high				
+Loc:	1869	1800					
+Table:	Tables/M.csv						
+							
+Name:	B						
+Color:	8						
+Shape:	0						
+Radius:	24.475						
+States:	2	low	high				
+Loc:	1905	1951					
+Table:	Tables/B.csv						
+							
+Name:	P						
+Color:	11						
+Shape:	0						
+Radius:	24.475						
+States:	2	low	high				
+Loc:	2077	1846					
+Table:	Tables/P.csv						
+							
+Name:	A						
+Color:	9						
+Shape:	0						
+Radius:	24.475						
+States:	2	low	high				
+Loc:	1863	2064					
+Table:	Tables/A.csv						
+							
+Name:	L						
+Color:	13						
+Shape:	0						
+Radius:	24.475						
+States:	2	low	high				
+Loc:	2036	2077					
+Table:	Tables/L.csv						
+							
+Name:	Le						
+Color:	14						
+Shape:	0						
+Radius:	24.475						
+States:	2	low	high				
+Loc:	2143	2256					
+Table:	Tables/Le.csv						
+							
+Name:	Lem						
+Color:	5						
+Shape:	0						
+Radius:	24.475						
+States:	2	low	high				
+Loc:	2144	2103					
+Table:	Tables/Lem.csv						
+							
+Name:	Am						
+Color:	10						
+Shape:	0						
+Radius:	24.475						
+States:	2	low	high				
+Loc:	1948	2014					
+Table:	Tables/Am.csv						
+							
+Name:	Rm						
+Color:	7						
+Shape:	0						
+Radius:	24.475						
+States:	2	low	high				
+Loc:	1716	2036					
+Table:	Tables/Rm.csv						
+							
+Name:	Lm						
+Color:	12						
+Shape:	0						
+Radius:	24.475						
+States:	2	low	high				
+Loc:	1974	2179					
+Table:	Tables/Lm.csv						
+							
+							
+22	Edges						
+							
+Start:	Ge						
+End:	C						
+Name:	regulates						
+Weight:	1						
+Color:	0						
+3	Anchors:	1531	2179	1684	1845	1723	1845
+							
+Start:	M						
+End:	B						
+Name:	regulates						
+Weight:	1						
+Color:	4						
+2	Anchors:	1869	1800	1905	1951		
+							
+Start:	M						
+End:	P						
+Name:	regulates						
+Weight:	1						
+Color:	4						
+2	Anchors:	1869	1800	2077	1846		
+							
+Start:	C						
+End:	M						
+Name:	regulates						
+Weight:	1						
+Color:	2						
+2	Anchors:	1723	1845	1869	1800		
+							
+Start:	A						
+End:	R						
+Name:	regulates						
+Weight:	-2						
+Color:	9						
+2	Anchors:	1863	2064	1731	2111		
+							
+Start:	Ge						
+End:	L						
+Name:	regulates						
+Weight:	-2						
+Color:	0						
+2	Anchors:	1531	2179	2036	2077		
+							
+Start:	Le						
+End:	L						
+Name:	regulates						
+Weight:	0.9						
+Color:	14						
+2	Anchors:	2143	2256	2036	2077		
+							
+Start:	L						
+End:	A						
+Name:	regulates						
+Weight:	0.9						
+Color:	13						
+2	Anchors:	2036	2077	1863	2064		
+							
+Start:	B						
+End:	A						
+Name:	regulates						
+Weight:	0.1						
+Color:	8						
+2	Anchors:	1905	1951	1863	2064		
+							
+Start:	P						
+End:	L						
+Name:	regulates						
+Weight:	0.1						
+Color:	11						
+2	Anchors:	2077	1846	2036	2077		
+							
+Start:	R						
+End:	M						
+Name:	regulates						
+Weight:	-2						
+Color:	6						
+2	Anchors:	1731	2111	1869	1800		
+							
+Start:	Rm						
+End:	M						
+Name:	regulates						
+Weight:	-2						
+Color:	7						
+2	Anchors:	1716	2036	1869	1800		
+							
+Start:	Am						
+End:	R						
+Name:	regulates						
+Weight:	-2						
+Color:	10						
+2	Anchors:	1948	2014	1731	2111		
+							
+Start:	A						
+End:	Rm						
+Name:	regulates						
+Weight:	-1						
+Color:	9						
+2	Anchors:	1863	2064	1716	2036		
+							
+Start:	Am						
+End:	Rm						
+Name:	regulates						
+Weight:	-1						
+Color:	10						
+2	Anchors:	1948	2014	1716	2036		
+							
+Start:	R						
+End:	Rm						
+Name:	regulates						
+Weight:	1						
+Color:	6						
+2	Anchors:	1731	2111	1716	2036		
+							
+Start:	L						
+End:	Am						
+Name:	regulates						
+Weight:	1						
+Color:	13						
+2	Anchors:	2036	2077	1948	2014		
+							
+Start:	Lm						
+End:	Am						
+Name:	regulates						
+Weight:	1						
+Color:	12						
+2	Anchors:	1974	2179	1948	2014		
+							
+Start:	Lem						
+End:	Lm						
+Name:	regulates						
+Weight:	6.38378239159465E-16						
+Color:	5						
+2	Anchors:	2144	2103	1974	2179		
+							
+Start:	P						
+End:	Lm						
+Name:	regulates						
+Weight:	1						
+Color:	11						
+2	Anchors:	2077	1846	1974	2179		
+							
+Start:	Le						
+End:	Lm						
+Name:	regulates						
+Weight:	1						
+Color:	14						
+2	Anchors:	2143	2256	1974	2179		
+							
+Start:	Ge						
+End:	Lm						
+Name:	regulates						
+Weight:	-2						
+Color:	0						
+2	Anchors:	1531	2179	1974	2179		
+							
+							
+0	Drawings						
+							
+<NOTES>							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+</NOTES>							

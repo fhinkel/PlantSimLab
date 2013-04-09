@@ -1,0 +1,152 @@
+lac_operon_reduced
+
+6	Nodes
+
+2	States
+
+4000	Width
+4000	Height
+
+Name:	Ge
+Color:	0
+Shape:	0
+Radius:	24.475
+States:	2	low	high
+Loc:	1875	1807
+Table:	Tables/Ge.csv
+
+Name:	M
+Color:	3
+Shape:	0
+Radius:	24.475
+States:	2	low	high
+Loc:	2132	1656
+Table:	Tables/M.csv
+
+Name:	L
+Color:	7
+Shape:	0
+Radius:	24.475
+States:	2	low	high
+Loc:	2046	1731
+Table:	Tables/L.csv
+
+Name:	Le
+Color:	13
+Shape:	0
+Radius:	24.475
+States:	2	low	high
+Loc:	2314	1812
+Table:	Tables/Le.csv
+
+Name:	Lm
+Color:	6
+Shape:	0
+Radius:	24.475
+States:	2	low	high
+Loc:	2200	1752
+Table:	Tables/Lm.csv
+
+Name:	Lem
+Color:	12
+Shape:	0
+Radius:	24.475
+States:	2	low	high
+Loc:	2307	1721
+Table:	Tables/Lem.csv
+
+
+10	Edges
+
+Start:	M
+End:	L
+Name:	regulates
+Weight:	0.9
+Color:	3
+2	Anchors:	2132	1656	2046	1731
+
+Start:	L
+End:	M
+Name:	regulates
+Weight:	1.0
+Color:	7
+2	Anchors:	2046	1731	2132	1656
+
+Start:	Ge
+End:	M
+Name:	regulates
+Weight:	-2.0
+Color:	0
+2	Anchors:	1875	1807	2132	1656
+
+Start:	Ge
+End:	L
+Name:	regulates
+Weight:	-2.0
+Color:	0
+2	Anchors:	1875	1807	2046	1731
+
+Start:	Le
+End:	L
+Name:	regulates
+Weight:	0.1
+Color:	13
+2	Anchors:	2314	1812	2046	1731
+
+Start:	Le
+End:	Lm
+Name:	regulates
+Weight:	1.0
+Color:	13
+2	Anchors:	2314	1812	2200	1752
+
+Start:	Ge
+End:	Lm
+Name:	regulates
+Weight:	-2.0
+Color:	0
+2	Anchors:	1875	1807	2200	1752
+
+Start:	Lm
+End:	M
+Name:	regulates
+Weight:	1.0
+Color:	6
+2	Anchors:	2200	1752	2132	1656
+
+Start:	Lem
+End:	Lm
+Name:	regulates
+Weight:	0.9
+Color:	12
+2	Anchors:	2307	1721	2200	1752
+
+Start:	M
+End:	Lm
+Name:	regulates
+Weight:	0.1
+Color:	3
+2	Anchors:	2132	1656	2200	1752
+
+
+1	Drawings
+
+
+Color:	0
+4	Points:	1940	1630	2220	1630	2220	1844	1940	1844	
+
+<NOTES>
+									
+									
+									
+									
+									
+									
+									
+									
+									
+
+
+
+
+</NOTES>

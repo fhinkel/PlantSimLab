@@ -1,0 +1,20 @@
+ 
+NumCandidates                    55.00  
+ 
+NumParentsToPreserve              5.00  
+ 
+StableGenerationLimit            355.00   
+
+MutateProbability                0.755   
+
+HammingPolyWeight                0.10  
+ 
+ComplexityWeight                 0.20  
+ 
+RevEngWeight                     0.30  
+ 
+BioProbWeight                    0.20  
+ 
+HammingModelWeight               0.35  
+ 
+PolyScoreWeight                  0.65   

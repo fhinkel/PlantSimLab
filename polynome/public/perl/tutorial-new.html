@@ -1,0 +1,278 @@
+<HTML>
+    <HEAD>
+        <TITLE>Polynome Tutorial</TITLE>
+    </HEAD>
+<BODY>
+
+<a name="top">
+<h1>Polynome: Parameter Estimation for Boolean Network Models</h1>
+</a>
+<h3><a href="#D">Description</a></h3>
+<h3>Input</h3>
+    <ul>
+        <li><a href="#N">Number of nodes</a>
+        <li><a href="#F">Format of the input data</a>
+        <li><a href="#P">Format of the partial input functions (optional)</a>
+    </ul>
+
+<h3>Supporting Algorithms/Procedures</h3>
+    <ul>
+        <li><a href="#DA">Data</a>
+        <li><a href="#MA">Modeling</a>
+        <li><a href="#SA">Simulation</a>
+    </ul>
+
+<h3>Output</h3>
+    <ul>
+        <li><a href="#M">Type of model</a>
+        <li><a href="#S">Type of simulation</a>
+        <li><a href="#V">Viewing options</a>
+    </ul>
+<h3><a href="#C">Credits</a></h3>
+
+<HR SIZE=1>
+
+<a name="D">
+<h1>Description</h1>
+</a>
+<P>Polynome is a web-based tool for parameter estimation and simulation of Boolean models of biological networks.</P>
+
+<P>Given a set of input data, Polynome generates a Boolean network which fits the
+(Booleanized) data and simulates the model. We represent Boolean
+networks as time discrete dynamical systems, i.e., a Boolean network
+with n nodes is represented as an n-tuple of polynomial functions
+with coefficients in a field with two elements, where the <I>i</I>-th
+polynomial function describes the state transitions of the <I>i</I>-th
+node in the network.</P>
+
+<P>There are two types of models that can be generated, deterministic or stochastic.
+For a network of <I>n</I> nodes, a deterministic Boolean network will
+have <I>n</I> polynomial functions, whereas a stochastic Boolean
+network will have <I>n</I> sets of polynomial functions. There are
+two ways to simulate a model, in parallel or sequentially. Parallel
+simulation updates all nodes simultaneously, whereas sequential
+simulation updates nodes according to an update schedule (provided by
+the user). Each of these options is described below.</P>
+
+<P>There are a number of options for viewing the model and its simulation. If the user
+chooses to view the simulation, some statistics about the state space
+are returned to the screen, including the number of components and
+their sizes.</P>
+
+<div align="right"><a href="#top"><font size="-1" color="#FF0000">Return to the
+  top</font></a></div>
+
+
+<H1>Input</H1>
+
+<a name="N">
+<h2>Number of nodes</h2>
+</a>
+The number of nodes is the number of agents or constituents in the biological network. Currently the maximum value for <i>n</i> is 20; however certain procedures may require a smaller value for <i>n</i> (see <a href="#M">Supporting Algorithms</a>).
+
+<div align="right"><a href="#top"><font size="-1" color="#FF0000">Return to the
+  top</font></a></div>
+
+<a name="F">
+<h2>Format of the input data</h2>
+</a>
+Polynome accepts numerical data (floating point or multi-state) in table format: columns correspond to nodes and rows to time-series measurements. In the example below, the data represent 4 time-series measurements of 3 nodes.
+
+<table align ="center" width="25%">
+    <tr>
+        <td>1.1</td>      <td>2.8</td>      <td>3.4</td>
+    </tr>
+    <tr>
+        <td>2.5</td>      <td>1.2</td>      <td>3.3</td>
+    </tr>
+    <tr>
+        <td>3.2</td>      <td>2.1</td>      <td>2.4</td>
+    </tr>
+    <tr>
+        <td>0.1</td>      <td>2.9</td>      <td>2.1</td>
+    </tr>
+</table>
+
+<p>Polynome is capable of handling multiple data sets.  Each data set is preceded by a line beginning with a hash mark (#).  Any characters following the hash mark in the same line are treated as user comments and are therefore ignored by the software.</p>
+
+
+
+
+
+<p>Data sets can be entered in the Input Data box or uploaded in a plain-text file.</p>
+
+<a name="P">
+<h2>Format of the partial input functions (optional)</h2>
+</a>
+If the function for a variable is known, it can be used instead of inferring it from the data. Functions given as partial input will overwrite any function inferred from the data. If neither state space graph nor functions are desired output options, the partial input functions will be ignored. 
+
+
+<table align ="center" width="25%">
+    <tr>
+      <td>f3 = { <br>
+      x1 + x4 # 0.3 <br>
+      x1 * x2 + x4 # 0.7 <br>
+      } </td>
+    </tr>
+    <tr>
+      <td>f1 = x2+1+x1*x4</td>
+    </tr>
+    <tr>
+      <td>f2 = {<br>
+      x1<br>
+      x3<br>
+      }</td>
+    </tr>
+</table>
+
+<p>Partial input functions can be entered in the Input Functions box or uploaded in a plain-text file.</p>
+
+<div align="right"><a href="#top"><font size="-1" color="#FF0000">Return to the
+  top</font></a></div>
+
+<h1>Supporting Algorithms/Procedures</h1>
+
+<a name="DA">
+<h2>Data</h2>
+</a>
+
+<h3>Discretization</h3>
+Polynome is designed to work with multi-state data, that is, data whose entries come from a finite set.
+The current implementation is limited to two (2) states. Booleanizing the data is often done in modeling and it is a reasonable procedure  considering the typically small
+amounts of data available, as well as its low precision and noise content.
+If the input data are not Boolean, they are Booleanized via a procedure based on an existing <a href="http://polymath.vbi.vt.edu/discretization/DimitrovaMcGeeLaubenbacher.pdf">discretization method</a>.
+
+<h3>Inconsistency</h3>
+We view a time series (s1, s2, ..., sm) as a sequence of input-output pairs ((s1,s2),(s2,s3),...,(sm-1,sm)). Discretization may generate inconsistencies; this refers to discretized measurements where one input returns more than one output. Inconsistencies can occur when time delays, hidden variables or noise in the data are present.
+
+<p>Consider for instance the next discretized time course with 4 time steps (s1, …,s4):
+
+<br>
+s1         1          1          1
+<br>
+s2         1          1          1
+<br>
+s3         0          0          1
+<br>
+s4         0          0          0
+<br>
+
+Here, the state (1 1 1) has two outputs: (1 1 1) and (0 0 1).
+Because the model class underlying Polynome is that of polynomial functions, inconsistencies are handled as follows. All transitions from a state with multiple outputs are removed. In our example, we are left with the transition s3 -> s4.
+</p>
+
+<p>An exception is the case where the number of nodes is small enough so that the minimal-model estimation method is used.
+</p>
+
+<div align="right"><a href="#top"><font size="-1" color="#FF0000">Return to the
+  top</font></a></div>
+
+<a name="MA">
+<h2>Modeling</h2>
+</a>
+
+The set of possible models that fits given data is typically very large.
+We have implemented three procedures for searching the model space.
+
+
+<h4>Minimal model sampling</h4>
+
+This procedure samples the subspace of minimal models and returns a collection of most likely PDSs. Our implementation is based on a <a href="http://faculty.smu.edu/bstigler/issac071a-dimitrova.pdf">Groebner-fan method</a> which computes the model space using Groebner fans and samples using relative sizes of the cones in the fan.  This method returns PDSs that fit the data exactly.  It is used for networks with <i>n</i> <= 10. If a wiring diagram is requested, then it returns a labelled graph, where the weight on an incoming edge of a node <i>x</i> indicates the probability of the associated source node being a true input to <i>x</i>.  If a stochastic model is requested, then it returns a set of weighted functions per node.
+
+<h4>Minimal model estimation</h4>
+
+This procedure computes an ``approximate'' polynomial dynamical system (PDS), that is, one that almost fits the data.  It is based on the evolutionary algorithm <a href="http://scholar.lib.vt.edu/theses/available/etd-06182007-222927/unrestricted/PVL_ETD.pdf">REACT</a>, which optimizes an internal fitness function which depends on model complexity and data fit.  Because of its computational complexity, it is only used for networks with <i>n</i> <= 5. It is called if a wiring diagram is requested and the data are inconsistent or if a deterministic model is requested.
+
+<h4>Minimal model selection</h4>
+
+This procedure selects from the subspace of minimal models a PDS which fits the data.  Our implementation is based on the <a href="http://arxiv.org/abs/q-bio.QM/0605032">Minimal Sets Algorithm</a>, which restricts the data to essential coordinates as identified by the algorithm and explores the minimal model space involving only those corresponding variables.  This procedure is used for networks with <i>n</i> > 10.  It returns a minimal PDS and wiring diagram when a deterministic model is requested.
+
+
+<h3>Wiring diagrams</h3>
+There are two main
+<h3>Polynomial dynamical systems</h3>
+
+
+<a name="SA">
+<h2>Simulation</h2>
+</a>
+
+<h1>Output</h1>
+
+<a name="F">
+<h2>Type of model</h2>
+</a>
+This input determines the type of polynomial model to be constructed.
+<ul>
+    <li>Deterministic: this option retrieves a deterministic Boolean model from the input data. According to the input data and network size, a deterministic model will be retrieved.
+    <li>Stochastic: The user can choose a stochastic consensus model. The stochastic Boolean model for a network of <i>n</i> nodes will return n sets of polynomial functions, where the <i>i</i>-th set of polynomial functions describes the possible state transitions of the <i>i</i>-th node in the network. At each update, the model uses one of the possible functions chosen at random according to a given probability distribution.
+</ul>
+
+<div align="right"><a href="#top"><font size="-1" color="#FF0000">Return to the
+  top</font></a></div>
+
+<a name="S">
+<h2>Type of simulation</h2>
+</a>
+This will determine update schedule of the polynomial functions in a model, that is, the order in which to evaluate the functions.
+<ul>
+    <li>Parallel: This type of simulation is setup by default in Polynome. Also known as synchronous update, in this type of simulation all functions get evaluated at the same time.
+    <li>Sequential: the functions are evaluated in some specified order. The function indices must be entered in the input box provided with each index used exactly once and should be in the range 1 to <i>n</i> (number of nodes).
+</ul>
+
+<div align="right"><a href="#top"><font size="-1" color="#FF0000">Return to the
+  top</font></a></div>
+
+<a name="V">
+<h2>Viewing Options</h2>
+</a>
+
+<h3>Booleanized data</h3>
+If the user selects this option, the discretization into 2 states of the input raw data, will be displayed.
+
+<div align="right"><a href="#top"><font size="-1" color="#FF0000">Return to the
+  top</font></a></div>
+
+<h3>Model</h3>
+
+<h4>Wiring diagram</h4>
+The wiring diagram of a network of size <i>n</i> is the directed graph with <i>n</i> nodes where the nodes represent the elements of the network and arrows denoted causal relationships between nodes.
+
+If the user selects this option, Polynome will display wiring diagram corresponding to the inferred network. The user can select the format of the image file from the list of formats (gif, jpg, png and ps).
+
+<div align="right"><a href="#top"><font size="-1" color="#FF0000">Return to the
+  top</font></a></div>
+
+<h4>Polynomial dynamical system</h4>
+In this option, Polynome displays the polynomial model inferred through the input data.
+
+<div align="right"><a href="#top"><font size="-1" color="#FF0000">Return to the
+  top</font></a></div>
+
+<h3>State space simulation</h3>
+The State Space of a network of size <i>n</i> is the directed graph with 2<i><sup>n</sup></i> nodes where the nodes represent the different states <i>s<sub>i</sub></i> of the network and an arrow from <i>s<sub>i</sub></i> to <i>s<sub>j</sub></i> indicates the transition from input <i>s<sub>i</sub></i> to <i>s<sub>j</sub></i> output; in other words, if <i>f</i> is the polynomial model of a given network, then <i>f(s<sub>i</sub>)= s<sub>j</sub></i>.
+
+If the user selects this option, Polynome will display the state space corresponding to the inferred network. In a stochastic network, the probability for each transition can be displayed in the state space. The user can select the format of the image file from the list of formats (gif, jpg, png and ps).
+
+<div align="right"><a href="#top"><font size="-1" color="#FF0000">Return to the
+  top</font></a></div>
+
+
+
+
+<a name="C">
+<h1>Credits</h1>
+</a>
+<ul>
+    <li>Elena Dimitrova
+    <li>Luis Garcia-Puente
+    <li>Franziska Hinkelmann
+    <li>Abdul Jarrah
+    <li>Reinhard Laubenbacher
+    <li>Brandilyn Stigler
+    <li>Mike Stillman
+    <li>Paola Vera-Licona
+</ul>
+
+</BODY>
+</HTML>

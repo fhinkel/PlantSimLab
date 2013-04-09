@@ -1,0 +1,1 @@
+A and C upregulates B. C turns D off. E turns off F. G, E, and F forces H to be turned off. I makes J phosphorylated. K is upregulated by L. M is turned off by N. O is forced to turn off by P. Q is forced by R to turn off. S is forced by phosphorylization of T to turn off. U is turned off by phosphorylization of V.

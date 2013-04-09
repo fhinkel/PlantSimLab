@@ -1,0 +1,188 @@
+File to test whether the g.a can normalize the score weights 
+
+
+needs "fds.m2"
+needs "Points.m2"
+
+
+P=2; N=8;
+
+K=ZZ/P;
+R=K[makeVars N];
+
+WT = {"w1.txt","w2.txt"};
+
+KO = {(1, "K1_1.txt"),(1,"K1_2.txt"),(2, "K2.txt")};
+
+REV = {"RevMat.txt"};
+
+CMPLX = {"Comp.txt"};
+
+BIO = { };
+
+MODEL = {"Model1.txt","Model2.txt"};
+
+PARAMS = {"params4.txt"};
+
+
+
+T = readTSData(WT,KO,K);
+
+--------------------------------------
+--DO NOT CHANGE ANYTHING BELOW THIS 
+-------------------------------------- 
+
+
+d = apply(N,i->functionData(T,i+1));
+I = apply(N,i->sparseSets(d_i,R));
+PDI = {};
+B={};
+apply(N,i->
+	{
+		if I_i == 0 then B = {0}
+		else(B = primaryDecomposition I_i);
+
+		PDI = append(PDI,B);
+
+	});
+
+------------------------------------
+------------------------------------ 
+M={};
+m={};
+a={};
+A={};
+
+apply(N, k->
+	{
+		
+		if PDI_k_0 != 0 then apply(PDI_k,i->
+							{
+								m=join(m,apply(N-dim i , j->i_j));
+								a=append(a,apply(N-dim i , j->i_j));
+							});
+		if PDI_k_0 == 0 then m={d_k#((keys d_k)_0)};
+		if PDI_k_0 == 0 then a={{d_k#((keys d_k)_0)}};
+
+		M = append(M,m);
+		A = append(A,a);
+		m={};
+		a={};
+		
+	});
+
+------------------------------------
+------------------------------------
+
+total = apply(M, i-> tally i);
+
+
+dep = {};
+Z={};
+z={};
+ll=0;
+count = 0;
+
+apply(A,k->
+	{		
+		apply(k,i->
+			{
+				apply(i,j->ll=ll+total_count#j);
+				z=append(z,(ll*1.0)/#i);
+				z=append(z,i);
+				Z = append(Z,z);
+				ll=0;
+				z={};
+			});
+		
+		dep = append(dep,sort(Z));
+		Z={};
+		count = count+1;
+	});
+
+------------------------------------
+------------------------------------
+
+
+file = openOut "Ex-set.txt";
+
+C = apply(dep,i-> select(i, j-> j_0 == i_((#i)-1)_0));
+u = {};
+U={};
+
+apply(N, i->
+	{
+		apply(C_i,j-> u=join(u,j_1));
+		u = unique u;
+		miniset = apply(u, k-> total_i#k);
+		mini = min miniset;
+		u = toList select(total_i, m-> m >= mini);
+		u = ideal u;
+		u = gens u;
+		u = rsort u;
+		u = entries u;
+		U = append(U,u_0);
+		u={};
+	});
+
+apply(N,i->
+	{
+		file << "Function # " << i+1 << " = " << toString(U_i)<<endl;
+	});
+
+
+
+
+file << close;
+
+-----------------------------------------
+--Delete if File Matrix.txt is not needed
+-----------------------------------------
+
+file = openOut "Matrix.txt";
+file << "The columns are the number of times a variable appears starting from Left to Right with x1"<<endl<<endl;
+apply(N,i->
+	{
+		file << "F" << i+1 << "\t";
+		apply(N,j->
+			{
+				if total_i#?(R_j) then file << total_i#(R_j)<< "\t"
+				else(file << "0" << "\t");
+			});
+		file << endl;
+	});
+file << close;
+
+
+
+-----------------------------------------
+--Delete if File Dep.txt is not needed
+-----------------------------------------
+
+file = openOut "Dep.txt";
+apply(N,i->
+	{
+		file << "Function # " << i+1 << "   " << #PDI_i << endl;
+		apply(#dep_i,j->
+			{
+				file << dep_i_j <<endl;
+			});
+		file << endl;
+	});
+file << close;
+
+------------------------------------------
+--Delete if File model.txt is not needed
+------------------------------------------
+
+file = openOut "model.txt";
+apply(N,i->
+	{
+		file << "f" << i+1 << " = ";
+		if dep_i_(#dep_i -1)_1 == {d_i#((keys d_i)_0)} then fun = toString(d_i#((keys d_i)_0))
+		else (fun = toString(findFunction(d_i,dep_i_(#dep_i -1)_1 )));
+
+		file << fun <<endl;
+	});
+file << close;
+

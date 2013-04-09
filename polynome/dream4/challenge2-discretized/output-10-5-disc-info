@@ -1,0 +1,41 @@
+---discretizing gene 1 ----
+min, max values: 0 .839609
+min, max steady: .709247 .839609
+interval boundaries: {0, .167922, .335844, .503766, .671688, .839609}
+---discretizing gene 2 ----
+min, max values: .244776 .877218
+min, max steady: .522448 .723322
+interval boundaries: {.244776, .337333, .42989, .521183, .724587, .877218}
+---discretizing gene 3 ----
+min, max values: .0302064 .630897
+min, max steady: .427554 .630897
+interval boundaries: {.0302064, .129543, .22888, .328217, .426353, .630897}
+---discretizing gene 4 ----
+min, max values: .0979928 .874585
+min, max steady: .118913 .155158
+interval boundaries: {.0979928, .253311, .40863, .563948, .719267, .874585}
+---discretizing gene 5 ----
+min, max values: .0205437 .752035
+min, max steady: .0352375 .0813993
+interval boundaries: {.0205437, .166842, .31314, .459438, .605737, .752035}
+---discretizing gene 6 ----
+min, max values: .0273886 .885277
+min, max steady: .0443375 .113487
+interval boundaries: {.0273886, .198966, .370544, .542122, .713699, .885277}
+---discretizing gene 7 ----
+min, max values: .0043085 .796885
+min, max steady: .0153988 .0362636
+interval boundaries: {.0043085, .162824, .321339, .479854, .63837, .796885}
+---discretizing gene 8 ----
+min, max values: .0009981 .789731
+min, max steady: .462182 .62342
+interval boundaries: {.0009981, .154726, .308454, .460604, .624998, .789731}
+---discretizing gene 9 ----
+min, max values: .0297624 .805291
+min, max steady: .120382 .251199
+interval boundaries: {.0297624, .118831, .339974, .495079, .650185, .805291}
+---discretizing gene 10 ----
+min, max values: .0382168 .940485
+min, max steady: .624732 .808201
+interval boundaries: {.0382168, .233722, .429227, .622928, .810005, .940485}
+

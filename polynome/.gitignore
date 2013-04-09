@@ -1,0 +1,15 @@
+dream4/React/React
+React
+.done.js
+dream4/React100/React
+EA/React
+*.swp
+db/development.sqlite3
+log/development.log
+log/test.log
+EA/*.o
+db/test.sqlite3
+macaulay2/exitcode-post_m2.val
+macaulay2/exitcode.val
+macaulay2/macaulay.log
+

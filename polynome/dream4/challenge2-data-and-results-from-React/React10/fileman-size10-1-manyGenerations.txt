@@ -1,0 +1,23 @@
+P=2; N=10;
+WT =
+{"/Users/fhinkel/Sites/polynome-master/dream4/ReactParameters/TS1.txt, 
+"/Users/fhinkel/Sites/polynome-master/dream4/ReactParameters/TS2.txt",
+"/Users/fhinkel/Sites/polynome-master/dream4/ReactParameters/TS3.txt",
+"/Users/fhinkel/Sites/polynome-master/dream4/ReactParameters/TS4.txt",
+"/Users/fhinkel/Sites/polynome-master/dream4/ReactParameters/TS5.txt",
+"/Users/fhinkel/Sites/polynome-master/dream4/ReactParameters/TS6.txt"};
+KO = {"Users/fhinkel/Sites/polynome-master/dream4/ReactParameters/KO1.txt};
+"/Users/fhinkel/Sites/polynome-master/dream4/ReactParameters/KO2.txt",
+"/Users/fhinkel/Sites/polynome-master/dream4/ReactParameters/KO3.txt",
+"/Users/fhinkel/Sites/polynome-master/dream4/ReactParameters/KO4.txt",
+"/Users/fhinkel/Sites/polynome-master/dream4/ReactParameters/KO5.txt",
+"/Users/fhinkel/Sites/polynome-master/dream4/ReactParameters/KO6.txt",
+"/Users/fhinkel/Sites/polynome-master/dream4/ReactParameters/KO7.txt",
+"/Users/fhinkel/Sites/polynome-master/dream4/ReactParameters/KO8.txt",
+"/Users/fhinkel/Sites/polynome-master/dream4/ReactParameters/KO9.txt",
+"/Users/fhinkel/Sites/polynome-master/dream4/ReactParameters/KO10.txt"};
+REV = {};
+CMPLX = {};
+BIO = {};
+MODEL = {};
+PARAMS = {"params-size10-1-manyGenerations.txt"};

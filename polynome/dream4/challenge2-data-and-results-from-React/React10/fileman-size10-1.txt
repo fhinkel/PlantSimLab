@@ -1,0 +1,26 @@
+P=2; N=15;
+WT ={
+"1_TS1.txt",
+"1_TS2.txt",
+"1_TS3.txt",
+"1_TS4.txt",
+"1_TS5.txt",
+"1_TS6.txt"
+};
+KO ={
+(1,"1_KO1.txt"),
+(2,"1_KO2.txt"),
+(3,"1_KO3.txt"),
+(4,"1_KO4.txt"),
+(5,"1_KO5.txt"),
+(6,"1_KO6.txt"),
+(7,"1_KO7.txt"),
+(8,"1_KO8.txt"),
+(9,"1_KO9.txt"),
+(10,"1_KO10.txt")
+};
+REV = {};
+CMPLX = {};
+BIO = {Bio-network1-superset.txt};
+MODEL = {};
+PARAMS = {"params-size10-1.txt"};
